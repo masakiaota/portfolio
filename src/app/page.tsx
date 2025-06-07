@@ -8,7 +8,7 @@ export default function Home() {
       {/* ヒーローセクション */}
       <section id="home" className="py-20">
         <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <div className="text-center">
               <h1 className="text-5xl font-bold mb-4 text-black">
                 Masaki Aota
@@ -37,7 +37,7 @@ export default function Home() {
       {/* 自己紹介セクション */}
       <section id="about" className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12">自己紹介</h2>
             <p className="text-lg text-gray-700 mb-6">
               早稲田大学大学院卒業後、2021年より大手メディア企業で機械学習エンジニア・データサイエンティストとして活動しています。
@@ -100,7 +100,7 @@ export default function Home() {
       {/* プロジェクトセクション */}
       <section id="projects" className="py-20">
         <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12">プロジェクト</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg shadow-md p-6">
@@ -279,7 +279,7 @@ export default function Home() {
       {/* 私が登場する出版物セクション */}
       <section id="publications" className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12">私が登場する出版物</h2>
             <div className="space-y-6">
             <div className="bg-white rounded-lg shadow-md p-6">
