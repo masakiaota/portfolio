@@ -1,92 +1,81 @@
-# Next.js ポートフォリオサイト開発計画
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## 開発コマンド
+
+```bash
+# 開発サーバー起動（Turbopack使用）
+npm run dev
+
+# 本番ビルド
+npm run build
+
+# 本番サーバー起動
+npm run start
+
+# リント実行
+npm run lint
+```
+
+### 重要な注意事項
+- ユーザーは常に `npm run dev` で開発サーバーを起動し、UIの変化を監視している
+- **npm run build を実行すると開発サーバーが停止するため、基本的に実行しない**
+- ビルドが必要な場合は、ユーザーから指示があった場合のみ実行する
+- 自発的にビルドを実行したい場合は、必ずユーザーに確認を取ること
 
 ## プロジェクト概要
+
 - **目的**: 機械学習エンジニアとしてのポートフォリオサイト作成
-- **技術スタック**: Next.js (React), TypeScript推奨
+- **技術スタック**: Next.js (React), TypeScript, Tailwind CSS
 - **ホスティング**: Cloudflare Pages
 - **ソース管理**: GitHub
 - **開発環境**: MacBook Air (M3)
 
-## 開発環境の確認結果
-- **Node.js**: v24.1.0 ✅ (インストール済み)
-- **npm**: 11.3.0 ✅ (インストール済み)
-- **Git**: 2.39.5 (Apple Git-154) ✅ (インストール済み)
-- **yarn**: ❌ (未インストール - npmで代用可能)
-- **エディタ**: Cursor (VSCodeの代わりに使用)
+## 現在のアーキテクチャ
 
-## 開発ステップ
+### 構成
+- **シングルページアプリケーション**: すべてのコンテンツが`src/app/page.tsx`に統合
+- **スムーズスクロールナビゲーション**: アンカーリンクによるセクション間移動
+- **レスポンシブデザイン**: Tailwind CSSによるモバイル対応
 
-### 1. 開発環境のセットアップ
-#### 必要なツール
-- **Node.js** (v18以上推奨): JavaScriptランタイム
-- **npm/yarn**: パッケージマネージャー
-- **Cursor**: コードエディタ（VSCodeベースのAI統合エディタ）
-- **Git**: バージョン管理
+### ディレクトリ構造
+```
+src/
+├── app/
+│   ├── page.tsx      # メインページ（全セクション統合）
+│   ├── layout.tsx    # ルートレイアウト
+│   ├── globals.css   # グローバルスタイル + カスタム背景色
+│   └── favicon.ico
+└── components/
+    ├── Header.tsx    # スティッキーヘッダー
+    ├── Footer.tsx    # フッター
+    └── SocialLinks.tsx # ソーシャルメディアリンク
+```
 
-#### インストール確認コマンド
+### 主要セクション構成
+1. **Home** (#home): ヒーローセクション、プロフィール写真、ソーシャルリンク
+2. **About** (#about): 自己紹介、スキルセット（4つのカード形式）
+3. **Projects** (#projects): プロジェクト一覧（12のプロジェクト、カードグリッド表示）
+4. **Publications** (#publications): 出版物・登場書籍（3つの出版物）
+5. **Contact** (#contact): お問い合わせフォーム（未実装）
+
+### 技術設定
+- **TypeScript**: `@/*`エイリアスで`./src/*`へのパスマッピング、strict mode有効
+- **Tailwind CSS**: v4使用、ユーティリティクラスベースのスタイリング
+- **Next.js**: 15.3.3、App Router使用、Turbopack対応
+
+### 現在のデザイン仕様
+- **背景色構成**:
+  - Home、Projects、Contact: `bg-light-gray` (#FCFCFC) - ほぼ白だが微妙にグレー
+  - About、Publications: `bg-slate-50` - 薄いグレー
+- **フォント**: 日本語フォント最適化済み（Hiragino, Meiryo等）
+- **カードレイアウト**: flexboxによる高さ揃え、統一スタイリング
+
+## デプロイ設定
+
+### GitHub連携
 ```bash
-node --version
-npm --version
-git --version
-```
-
-### 2. Next.jsプロジェクトの初期化
-```bash
-npx create-next-app@latest portfolio --typescript --tailwind --app
-cd portfolio
-```
-
-推奨オプション:
-- TypeScript: Yes （型安全性のため）
-- ESLint: Yes （コード品質チェック）
-- Tailwind CSS: Yes （簡単なスタイリング）
-- src/ directory: Yes （構造整理）
-- App Router: Yes （最新の機能）
-
-### 3. 基本的なページ構造
-```
-portfolio/
-├── src/
-│   ├── app/
-│   │   ├── page.tsx          # ホームページ
-│   │   ├── about/
-│   │   │   └── page.tsx      # 自己紹介
-│   │   ├── projects/
-│   │   │   └── page.tsx      # プロジェクト一覧
-│   │   └── contact/
-│   │       └── page.tsx      # 連絡先
-│   └── components/
-│       ├── Header.tsx        # ナビゲーション
-│       └── Footer.tsx        # フッター
-```
-
-### 4. 機械学習エンジニア向けの機能
-#### 実装推奨項目
-1. **プロジェクトショーケース**
-   - 機械学習プロジェクトの説明
-   - 使用技術（Python, TensorFlow, PyTorch等）
-   - 成果・精度の可視化
-   - GitHubリンク
-
-2. **スキルセクション**
-   - プログラミング言語
-   - MLフレームワーク
-   - データ処理ツール
-   - クラウドプラットフォーム
-
-3. **ブログ/記事セクション** （オプション）
-   - 技術的な知見の共有
-   - プロジェクトの詳細説明
-
-### 5. デザインのポイント
-- **シンプルで読みやすいレイアウト**
-- **ダークモード対応**（技術者に人気）
-- **レスポンシブデザイン**（モバイル対応）
-- **パフォーマンス重視**（高速表示）
-
-### 6. GitHub連携
-```bash
-git init
 git add .
 git commit -m "Initial commit"
 git branch -M main
@@ -94,103 +83,43 @@ git remote add origin https://github.com/YOUR_USERNAME/portfolio.git
 git push -u origin main
 ```
 
-### 7. Cloudflare Pages設定
+### Cloudflare Pages設定
 1. Cloudflareダッシュボードでプロジェクト作成
 2. GitHubリポジトリを接続
 3. ビルド設定:
    - Framework preset: Next.js
    - Build command: `npm run build`
    - Build output directory: `.next`
+4. 継続的デプロイメント: mainブランチへのpushで自動デプロイ
 
-### 8. 継続的デプロイメント
-- mainブランチへのpushで自動デプロイ
-- プレビューURLでテスト確認
+## 開発進捗
 
-## 開発のヒント
+### 完了済みフェーズ
+1. ✅ **フェーズ1: 基本コンテンツの充実**
+   - 実際のプロジェクト情報とスキル詳細を追加
+   - プロフィール写真の配置とスタイリング
+   - ソーシャルリンクの実装
 
-### ウェブ開発初心者向けアドバイス
-1. **コンポーネント思考**: UIを小さな部品に分割
-2. **状態管理**: ReactのuseStateから始める
-3. **CSS**: Tailwind CSSのユーティリティクラスを活用
-4. **デバッグ**: ブラウザの開発者ツールを活用
+2. ✅ **フェーズ2: デザイン基盤強化**
+   - カードレイアウトの最適化（統一スタイル、flexbox高さ揃え）
+   - タイポグラフィとフォントの最適化（日本語フォント、見出し階層）
+   - カラーパレットの統一とコントラスト改善（カスタム背景色実装）
 
-### よくある課題と解決策
-- **レイアウト崩れ**: Flexbox/Gridを学習
-- **パフォーマンス**: Next.jsのImage最適化を活用
-- **SEO**: メタタグとOGP設定
+### 現在進行中
+- **フェーズ8: デプロイ準備**
+  - GitHubリポジトリへのプッシュ
+  - Cloudflare Pagesへのデプロイ設定
+  - カスタムドメインの設定
 
-## 参考リソース
-- [Next.js公式ドキュメント](https://nextjs.org/docs)
-- [Tailwind CSS](https://tailwindcss.com/docs)
-- [Cloudflare Pages Docs](https://developers.cloudflare.com/pages/)
-
-## 次のステップ
-1. 開発環境の確認
-2. `npx create-next-app`でプロジェクト作成
-3. 基本的なページ作成から開始
-
-## 開発進捗（2025/1/5）
-
-### 完了済みタスク
-1. ✅ 開発環境のセットアップ確認
-2. ✅ Next.jsプロジェクトの初期化（TypeScript、Tailwind CSS、ESLint設定済み）
-3. ✅ 基本的なページ構造の作成
-   - Header.tsx、Footer.tsx作成
-   - ホームページ実装
-   - 自己紹介ページ実装
-   - プロジェクト一覧ページ実装（サンプル3件）
-   - お問い合わせページ実装
-
-## 開発進捗（2025/1/6）
-
-### 完了済みタスク
-1. ✅ シングルページレイアウトへの変更
-   - すべてのコンテンツを1ページに統合（Home、About、Projects、Contact）
-   - 個別ページファイルを削除
-2. ✅ スムーズスクロールナビゲーションの実装
-   - ヘッダーのリンクをアンカーリンクに変更
-   - スムーズスクロール動作を追加
-3. ✅ デザインの改善
-   - 各セクションに異なる背景色を適用（視覚的な区切り）
-   - ヘッダーをスティッキーに変更
-   - フッターに青みがかったグレーのグラデーション（slate-100 to slate-300）
-4. ✅ SocialLinksコンポーネントの作成
-   - GitHub、LinkedIn、はてなブログ、Kaggleのリンク（要URL更新）
-5. ✅ ビルドの成功確認
-   - TypeScriptエラーの修正
-   - 本番ビルド（`npm run build`）の成功
-
-### 現在の状態
-- 開発サーバー起動コマンド: `npm run dev`
-- 本番ビルド: `npm run build`
-- 本番サーバー起動: `npm run start`
-- アクセスURL: http://localhost:3000
-- シングルページレイアウトで基本構造完成
-
-### 次回の作業予定
-1. デザインの更なる改善
-   - レスポンシブデザインの強化（モバイル対応）
-   - アニメーションの追加
-   - フォントやタイポグラフィの調整
-2. コンテンツの充実
-   - 実際のプロジェクト情報の追加
-   - スキルセクションの詳細化
-   - プロフィール写真の追加
-3. 機能の追加
-   - お問い合わせフォームの実装（メール送信機能）
-   - ダークモード対応
-   - 多言語対応（日本語/英語）
-4. デプロイ準備
-   - GitHubリポジトリへのプッシュ
-   - Cloudflare Pagesへのデプロイ設定
-   - カスタムドメインの設定
+### 次の予定作業
+1. フェーズ4: お問い合わせフォーム実装
+2. セクション間の余白とレイアウト最適化
+3. アニメーション・インタラクション追加
 
 ### 注意事項
-- SocialLinksコンポーネントのURLは仮のもの（要更新）
 - お問い合わせフォームは現在送信機能なし（要実装）
-- レスポンシブデザインは基本的なものだけ（要強化）
 
-## 開発者情報（2025/1/7）
+## 開発者情報
 
 ### ソーシャルメディア・プロフィール
 - **GitHub**: https://github.com/masakiaota
