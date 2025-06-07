@@ -11,13 +11,13 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-black">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-black leading-tight">
                 Masaki Aota
               </h1>
-            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3 text-gray-800">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-gray-800 leading-tight">
               Machine Learning Engineer & Data Scientist
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-6 sm:mb-8">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-6 sm:mb-8 leading-relaxed">
               Kaggle Master | AtCoder水色
             </p>
             {/* プロフィール写真 */}
@@ -45,12 +45,12 @@ export default function Home() {
       <section id="about" className="py-12 sm:py-16 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">自己紹介</h2>
-            <p className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 leading-tight">自己紹介</h2>
+            <p className="text-base sm:text-lg text-gray-700 mb-6 leading-relaxed">
               早稲田大学大学院卒業後、2021年より大手メディア企業で機械学習エンジニア・データサイエンティストとして活動しています。
               生存分析、ABテスト、画像処理、自然言語処理など幅広い分野での業務経験があります。
             </p>
-            <p className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8">
+            <p className="text-base sm:text-lg text-gray-700 mb-8 leading-relaxed">
               研究開発部署ではPoCに従事し、新機能の実装や年間数千万円規模のコスト削減を達成。
               現在はB2B事業部署で、自然言語処理を活用したシステム開発に携わっています。
             </p>
@@ -119,7 +119,7 @@ export default function Home() {
       <section id="projects" className="py-12 sm:py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">プロジェクト</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 leading-tight">プロジェクト</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-stretch">
             <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
               <div className="flex-grow">
@@ -349,7 +349,7 @@ export default function Home() {
       <section id="publications" className="py-12 sm:py-16 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">私が登場する出版物</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 leading-tight">私が登場する出版物</h2>
             <div className="space-y-4 sm:space-y-6">
             <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
               <div className="flex-grow">
@@ -357,7 +357,7 @@ export default function Home() {
                 <p className="text-lg text-gray-700 mb-2">
                   「PolarsとPandasで学ぶ データ処理アイデアレシピ55」
                 </p>
-                <p className="text-gray-600 mb-3">著者: 冨山 吉孝、早川 裕樹、齋藤 慎一朗</p>
+                <p className="text-gray-600 mb-3">著者: 冨山 吉孝、早川 裕橹、齋藤 慎一朗</p>
                 <p className="text-gray-700 mb-4">
                   本書の謝辞に掲載いただきました。データ処理に関する知見の共有や技術的なフィードバックを行いました。
                 </p>
@@ -465,7 +465,7 @@ export default function Home() {
       {/* お問い合わせセクション */}
       <section id="contact" className="py-12 sm:py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">お問い合わせ</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 leading-tight">お問い合わせ</h2>
           <div className="max-w-2xl mx-auto">
             <form 
               className="bg-white rounded-lg shadow-md p-8"
