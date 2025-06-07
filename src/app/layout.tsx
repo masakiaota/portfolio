@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Machine Learning Portfolio",
-  description: "機械学習エンジニアのポートフォリオサイト",
+  title: "Masaki Aota | 機械学習エンジニア",
+  description: "Masaki Aota ｜ 機械学習エンジニア・データサイエンティストの紹介",
 };
 
 export default function RootLayout({

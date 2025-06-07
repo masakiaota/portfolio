@@ -55,7 +55,8 @@ src/
 └── components/
     ├── Header.tsx    # スティッキーヘッダー
     ├── Footer.tsx    # フッター
-    └── SocialLinks.tsx # ソーシャルメディアリンク
+    ├── SocialLinks.tsx # ソーシャルメディアリンク
+    └── ContactForm.tsx # お問い合わせフォーム（EmailJS）
 ```
 
 ### 主要セクション構成
@@ -63,7 +64,7 @@ src/
 2. **About** (#about): 自己紹介、スキルセット（4つのカード形式）
 3. **Projects** (#projects): プロジェクト一覧（12のプロジェクト、カードグリッド表示）
 4. **Publications** (#publications): 出版物・登場書籍（3つの出版物）
-5. **Contact** (#contact): お問い合わせフォーム（未実装）
+5. **Contact** (#contact): お問い合わせフォーム（EmailJS実装済み）
 
 ### 技術設定
 - **TypeScript**: `@/*`エイリアスで`./src/*`へのパスマッピング、strict mode有効
@@ -115,13 +116,15 @@ git push origin main
    - Cloudflare Pagesへのデプロイ設定（Static Export対応）
    - **公開URL**: https://masakiaota.pages.dev/
 
-### 次の予定作業
-1. フェーズ4: お問い合わせフォーム実装
-2. セクション間の余白とレイアウト最適化
-3. アニメーション・インタラクション追加
+4. ✅ **フェーズ4: 機能拡張**
+   - お問い合わせフォーム実装（EmailJS）
+   - メール送信機能（aotamasakimail+fromportfolio@gmail.com）
+   - フォームバリデーションと送信状態管理
 
-### 注意事項
-- お問い合わせフォームは現在送信機能なし（要実装）
+### 次の予定作業
+1. セクション間の余白とレイアウト最適化
+2. パフォーマンス最適化（画像最適化、SEO設定）
+3. 高度な機能（ダークモード、多言語対応）
 
 ## 開発者情報
 
