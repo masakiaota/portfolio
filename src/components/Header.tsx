@@ -6,6 +6,8 @@ export default function Header() {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      // URLにハッシュを追加
+      window.history.pushState(null, '', `#${sectionId}`);
     }
   };
 
@@ -18,7 +20,7 @@ export default function Header() {
             onClick={(e) => scrollToSection(e, 'home')}
             className="text-2xl font-bold cursor-pointer"
           >
-            ML Portfolio
+            Masaki Aota | Profile
           </a>
           <ul className="flex space-x-6">
             <li>
@@ -37,6 +39,15 @@ export default function Header() {
                 className="hover:text-gray-300 font-medium transition-colors cursor-pointer"
               >
                 自己紹介
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#publications" 
+                onClick={(e) => scrollToSection(e, 'publications')}
+                className="hover:text-gray-300 font-medium transition-colors cursor-pointer"
+              >
+                私が登場する出版物
               </a>
             </li>
             <li>
