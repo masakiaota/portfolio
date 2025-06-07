@@ -66,13 +66,13 @@ export default function SocialLinks({ className = '' }: SocialLinksProps) {
           href={link.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-600 hover:text-[#003366] transition-colors group relative"
+          className="text-slate-600 hover:text-blue-600 transition-colors group relative"
           aria-label={link.tooltip || link.name}
           title={link.tooltip || link.name}
         >
           {link.icon}
           {link.tooltip && (
-            <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs bg-gray-800 text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+            <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs bg-slate-800 text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
               {link.tooltip}
             </span>
           )}
