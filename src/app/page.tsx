@@ -8,10 +8,11 @@ export default function Home() {
       {/* ヒーローセクション */}
       <section id="home" className="py-20">
         <div className="container mx-auto px-6">
-          <div className="text-center">
-            <h1 className="text-5xl font-bold mb-4 text-black">
-              Masaki Aota
-            </h1>
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center">
+              <h1 className="text-5xl font-bold mb-4 text-black">
+                Masaki Aota
+              </h1>
             <h2 className="text-2xl font-semibold mb-3 text-gray-800">
               Machine Learning Engineer & Data Scientist
             </h2>
@@ -28,6 +29,7 @@ export default function Home() {
             <div className="flex justify-center">
               <SocialLinks className="[&>a]:bg-gray-200 [&>a]:w-12 [&>a]:h-12 [&>a]:rounded-full [&>a]:flex [&>a]:items-center [&>a]:justify-center [&>a]:hover:bg-gray-300" />
             </div>
+            </div>
           </div>
         </div>
       </section>
@@ -35,8 +37,8 @@ export default function Home() {
       {/* 自己紹介セクション */}
       <section id="about" className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">自己紹介</h2>
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-12">自己紹介</h2>
             <p className="text-lg text-gray-700 mb-6">
               早稲田大学大学院卒業後、2021年より大手メディア企業で機械学習エンジニア・データサイエンティストとして活動しています。
               生存分析、LTV計算、画像処理、自然言語処理など幅広い分野での業務経験があります。
@@ -98,8 +100,9 @@ export default function Home() {
       {/* プロジェクトセクション */}
       <section id="projects" className="py-20">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">プロジェクト</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-12">プロジェクト</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg shadow-md p-6">
               <h3 className="text-xl font-semibold mb-3">サブスク事業の価値計算</h3>
               <p className="text-gray-700 mb-4">
@@ -191,15 +194,15 @@ export default function Home() {
               <h3 className="text-xl font-semibold mb-3">政治資金収支報告書の情報抽出</h3>
               <div className="text-gray-700 mb-4">
                 OCRやLLMを活用した政治資金収支報告書からの情報抽出システムを開発。
-                <span className="text-blue-600 underline decoration-dotted cursor-help relative group ml-1">
+                <span className="text-blue-600 underline decoration-dotted cursor-help relative inline-block group ml-1 pb-1">
                   学会発表・論文投稿を実施
-                  <span className="absolute left-0 top-6 w-80 bg-gray-800 text-white text-sm p-3 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 pointer-events-none">
+                  <span className="absolute left-0 top-full -mt-1 w-80 bg-gray-800 text-white text-sm p-3 rounded-lg shadow-lg invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300 z-20 pointer-events-none group-hover:pointer-events-auto">
                     <span className="block space-y-2">
                       <a 
                         href="https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2H1OS3a01/_article/-char/ja/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block text-blue-300 hover:text-blue-100 transition pointer-events-auto"
+                        className="block text-blue-300 hover:text-blue-100 transition"
                       >
                         • JSAI2023論文
                       </a>
@@ -207,7 +210,7 @@ export default function Home() {
                         href="https://www.jaesnet.org/archives/report-archives/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block text-blue-300 hover:text-blue-100 transition pointer-events-auto"
+                        className="block text-blue-300 hover:text-blue-100 transition"
                       >
                         • 選挙学会発表
                       </a>
@@ -238,9 +241,9 @@ export default function Home() {
               <h3 className="text-xl font-semibold mb-3">データ分析コンペティション</h3>
               <div className="text-gray-700 mb-4">
                 Kaggleを中心とした機械学習コンペティションで
-                <span className="text-blue-600 underline decoration-dotted cursor-help relative group mx-1">
+                <span className="text-blue-600 underline decoration-dotted cursor-help relative inline-block group mx-1 pb-1">
                   複数回入賞
-                  <span className="absolute left-0 top-6 w-96 bg-gray-800 text-white text-sm p-3 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 pointer-events-none">
+                  <span className="absolute left-0 top-full -mt-1 w-96 bg-gray-800 text-white text-sm p-3 rounded-lg shadow-lg invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300 z-20 pointer-events-none group-hover:pointer-events-auto">
                     <span className="block space-y-1">
                       <span className="block">• Kaggle U.S. Patent Phrase Matching: 金メダル (8位)</span>
                       <span className="block">• Kaggle Feedback Prize - ELL: 金メダル (15位)</span>
@@ -269,14 +272,16 @@ export default function Home() {
               </div>
             </div>
           </div>
+          </div>
         </div>
       </section>
 
       {/* 私が登場する出版物セクション */}
       <section id="publications" className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">私が登場する出版物</h2>
-          <div className="max-w-4xl mx-auto space-y-6">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-12">私が登場する出版物</h2>
+            <div className="space-y-6">
             <div className="bg-white rounded-lg shadow-md p-6">
               <h3 className="text-xl font-semibold mb-3">謝辞掲載</h3>
               <p className="text-lg text-gray-700 mb-2">
@@ -381,6 +386,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </section>
