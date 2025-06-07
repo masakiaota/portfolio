@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import SocialLinks from '@/components/SocialLinks';
+import ContactForm from '@/components/ContactForm';
 
 export default function Home() {
   return (
@@ -466,61 +467,7 @@ export default function Home() {
       <section id="contact" className="py-12 sm:py-16 md:py-20 bg-light-gray">
         <div className="container mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 leading-tight text-slate-900">お問い合わせ</h2>
-          <div className="max-w-2xl mx-auto">
-            <form 
-              className="bg-white rounded-lg shadow-md p-8"
-              onSubmit={(e) => {
-                e.preventDefault();
-                alert('お問い合わせフォームの送信機能は未実装です。メールもしくはSNSより直接ご連絡ください。');
-              }}
-            >
-              <div className="mb-6">
-                <label htmlFor="name" className="block text-slate-700 font-medium mb-2">
-                  お名前
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  className="w-full px-4 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 transition-colors"
-                  required
-                />
-              </div>
-              <div className="mb-6">
-                <label htmlFor="email" className="block text-slate-700 font-medium mb-2">
-                  メールアドレス
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="w-full px-4 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 transition-colors"
-                  required
-                />
-              </div>
-              <div className="mb-6">
-                <label htmlFor="message" className="block text-slate-700 font-medium mb-2">
-                  メッセージ
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={5}
-                  className="w-full px-4 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 transition-colors"
-                  required
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 transition-colors font-medium"
-              >
-                送信する
-              </button>
-            </form>
-            <p className="text-center text-slate-600 text-sm mt-6">
-              ※ 現在、フォーム送信機能は利用できません。ソーシャルメディアよりお問い合わせください。
-            </p>
-          </div>
+          <ContactForm />
         </div>
       </section>
     </>
