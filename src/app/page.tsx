@@ -47,8 +47,8 @@ export default function Home() {
               研究開発部署ではPoCに従事し、新機能の実装や年間数千万円規模のコスト削減を達成。
               現在はB2B事業部署で、自然言語処理を活用したシステム開発に携わっています。
             </p>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-white rounded-lg shadow-md p-6">
                 <h3 className="text-xl font-semibold mb-4">プログラミング言語</h3>
                 <ul className="space-y-2 text-gray-700">
                   <li>• Python</li>
@@ -56,7 +56,7 @@ export default function Home() {
                 </ul>
                 <p className="text-sm text-gray-600 mt-3">※ 業務に必要な言語はキャッチアップします。</p>
               </div>
-              <div>
+              <div className="bg-white rounded-lg shadow-md p-6">
                 <h3 className="text-xl font-semibold mb-4">クラウドプラットフォーム</h3>
                 <ul className="space-y-2 text-gray-700">
                   <li>• Google Cloud Platform
@@ -71,7 +71,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div>
+              <div className="bg-white rounded-lg shadow-md p-6">
                 <h3 className="text-xl font-semibold mb-4">機械学習フレームワーク</h3>
                 <ul className="space-y-2 text-gray-700">
                   <li>• PyTorch/Transformers</li>
@@ -82,7 +82,7 @@ export default function Home() {
                   <li>• Streamlit/Gradio</li>
                 </ul>
               </div>
-              <div>
+              <div className="bg-white rounded-lg shadow-md p-6">
                 <h3 className="text-xl font-semibold mb-4">データ処理ライブラリ</h3>
                 <ul className="space-y-2 text-gray-700">
                   <li>• Pandas/Polars</li>
