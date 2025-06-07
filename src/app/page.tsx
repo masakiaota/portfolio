@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       {/* ヒーローセクション */}
-      <section id="home" className="py-12 sm:py-16 md:py-20">
+      <section id="home" className="py-12 sm:py-16 md:py-20 bg-light-gray">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center">
@@ -116,7 +116,7 @@ export default function Home() {
       </section>
 
       {/* プロジェクトセクション */}
-      <section id="projects" className="py-12 sm:py-16 md:py-20">
+      <section id="projects" className="py-12 sm:py-16 md:py-20 bg-light-gray">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 leading-tight text-slate-900">プロジェクト</h2>
@@ -463,7 +463,7 @@ export default function Home() {
       </section>
 
       {/* お問い合わせセクション */}
-      <section id="contact" className="py-12 sm:py-16 md:py-20">
+      <section id="contact" className="py-12 sm:py-16 md:py-20 bg-light-gray">
         <div className="container mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 leading-tight text-slate-900">お問い合わせ</h2>
           <div className="max-w-2xl mx-auto">
