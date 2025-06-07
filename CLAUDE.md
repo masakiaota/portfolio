@@ -82,11 +82,10 @@ src/
 ### GitHub連携
 ```bash
 git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/portfolio.git
-git push -u origin main
+git commit -m "コミットメッセージ"
+git push origin main
 ```
+**リポジトリURL**: https://github.com/masakiaota/portfolio
 
 ### Cloudflare Pages設定
 1. Cloudflareダッシュボードでプロジェクト作成
@@ -110,11 +109,11 @@ git push -u origin main
    - タイポグラフィとフォントの最適化（日本語フォント、見出し階層）
    - カラーパレットの統一とコントラスト改善（カスタム背景色実装）
 
-### 現在進行中
-- **フェーズ8: デプロイ準備**
-  - GitHubリポジトリへのプッシュ
-  - Cloudflare Pagesへのデプロイ設定
-  - カスタムドメインの設定
+### 完了済みフェーズ（続き）
+3. ✅ **フェーズ8: デプロイ準備**
+   - GitHubリポジトリへのプッシュ（SSH認証設定）
+   - Cloudflare Pagesへのデプロイ設定（Static Export対応）
+   - **公開URL**: https://masakiaota.pages.dev/
 
 ### 次の予定作業
 1. フェーズ4: お問い合わせフォーム実装

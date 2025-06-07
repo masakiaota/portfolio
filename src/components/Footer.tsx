@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="w-32 h-0.5 bg-gradient-to-r from-transparent via-slate-400 to-transparent"></div>
           <SocialLinks className="[&>a]:text-slate-600 [&>a]:hover:text-[#003366] [&>a]:transition-colors" />
           <p className="text-center text-slate-600 text-sm">
-            &copy; 2024 Machine Learning Portfolio. All rights reserved.
+            &copy; 2025 Masaki Aota. All rights reserved.
           </p>
           <div className="flex items-center space-x-2 text-xs text-slate-500 mt-2">
             <span>●</span>
