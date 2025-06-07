@@ -43,20 +43,20 @@ export default function Header() {
             </li>
             <li>
               <a 
-                href="#publications" 
-                onClick={(e) => scrollToSection(e, 'publications')}
-                className="hover:text-gray-300 font-medium transition-colors cursor-pointer"
-              >
-                私が登場する出版物
-              </a>
-            </li>
-            <li>
-              <a 
                 href="#projects" 
                 onClick={(e) => scrollToSection(e, 'projects')}
                 className="hover:text-gray-300 font-medium transition-colors cursor-pointer"
               >
                 プロジェクト
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#publications" 
+                onClick={(e) => scrollToSection(e, 'publications')}
+                className="hover:text-gray-300 font-medium transition-colors cursor-pointer"
+              >
+                私が登場する出版物
               </a>
             </li>
             <li>
