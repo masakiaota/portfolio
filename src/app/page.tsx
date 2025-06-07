@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import SocialLinks from '@/components/SocialLinks';
 
 export default function Home() {
@@ -19,10 +20,16 @@ export default function Home() {
             <p className="text-xl text-gray-700 mb-8">
               Kaggle Master | AtCoder水色
             </p>
-            {/* プロフィール写真のダミー */}
+            {/* プロフィール写真 */}
             <div className="mb-8">
-              <div className="w-48 h-48 mx-auto bg-gray-300 rounded-full flex items-center justify-center">
-                <span className="text-gray-600 text-lg">写真</span>
+              <div className="w-48 h-48 mx-auto relative overflow-hidden rounded-full">
+                <Image
+                  src="/profile.JPG"
+                  alt="Masaki Aota"
+                  width={192}
+                  height={192}
+                  className="object-cover scale-150"
+                />
               </div>
             </div>
             {/* ソーシャルアイコン */}
@@ -244,10 +251,31 @@ export default function Home() {
                 <span className="text-blue-600 underline decoration-dotted cursor-help relative inline-block group mx-1 pb-1">
                   複数回入賞
                   <span className="absolute left-0 top-full -mt-1 w-96 bg-gray-800 text-white text-sm p-3 rounded-lg shadow-lg invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300 z-20 pointer-events-none group-hover:pointer-events-auto">
-                    <span className="block space-y-1">
-                      <span className="block">• Kaggle U.S. Patent Phrase Matching: 金メダル (8位)</span>
-                      <span className="block">• Kaggle Feedback Prize - ELL: 金メダル (15位)</span>
-                      <span className="block">• Solafune 衛星画像超解像度化: 優勝 (1位)</span>
+                    <span className="block space-y-2">
+                      <span className="block">
+                        • Kaggle <a 
+                          href="https://www.kaggle.com/competitions/us-patent-phrase-to-phrase-matching"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-300 hover:text-blue-100 transition"
+                        >U.S. Patent Phrase to Phrase Matching</a>: 金メダル (8位)
+                      </span>
+                      <span className="block">
+                        • Kaggle <a 
+                          href="https://www.kaggle.com/competitions/feedback-prize-english-language-learning"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-300 hover:text-blue-100 transition"
+                        >Feedback Prize - English Language Learning</a>: 金メダル (15位)
+                      </span>
+                      <span className="block">
+                        • Solafune <a 
+                          href="https://solafune.com/ja/competitions/7a1fc5e3-49bd-4ec1-8378-974951398c98?menu=about&tab=overview&modal=%22%22"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-300 hover:text-blue-100 transition"
+                        >衛星画像の5倍超解像度化 (for OSS)</a>: 優勝 (1位)
+                      </span>
                     </span>
                   </span>
                 </span>。深層学習を用いた自然言語・画像処理分野で実績。
