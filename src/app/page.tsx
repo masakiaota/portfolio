@@ -54,50 +54,61 @@ export default function Home() {
               研究開発部署ではPoCに従事し、新機能の実装や年間数千万円規模のコスト削減を達成。
               現在はB2B事業部署で、自然言語処理を活用したシステム開発に携わっています。
             </p>
-            <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
-              <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-semibold mb-4">プログラミング言語</h3>
-                <ul className="space-y-2 text-gray-700">
-                  <li>• Python</li>
-                  <li>• SQL</li>
-                </ul>
-                <p className="text-sm text-gray-600 mt-3">※ 業務に必要な言語はキャッチアップします。</p>
+            <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 items-stretch">
+              <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
+                <div className="flex-grow">
+                  <h3 className="text-xl font-semibold mb-4">プログラミング言語</h3>
+                  <ul className="space-y-2 text-gray-700">
+                    <li>• Python</li>
+                    <li>• SQL</li>
+                  </ul>
+                </div>
+                <p className="text-sm text-gray-600 mt-auto pt-3">※ 業務に必要な言語はキャッチアップします。</p>
               </div>
-              <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-semibold mb-4">クラウドプラットフォーム</h3>
-                <ul className="space-y-2 text-gray-700">
-                  <li>• Google Cloud Platform
-                    <ul className="ml-4 mt-1">
-                      <li className="text-sm">- Professional Data Engineer</li>
-                    </ul>
-                  </li>
-                  <li>• AWS
-                    <ul className="ml-4 mt-1">
-                      <li className="text-sm">- Solutions Architect Associate</li>
-                    </ul>
-                  </li>
-                </ul>
+              <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
+                <div className="flex-grow">
+                  <h3 className="text-xl font-semibold mb-4">クラウドプラットフォーム</h3>
+                  <ul className="space-y-2 text-gray-700">
+                    <li>• Google Cloud Platform
+                      <ul className="ml-4 mt-1">
+                        <li className="text-sm">- Professional Data Engineer</li>
+                      </ul>
+                    </li>
+                    <li>• AWS
+                      <ul className="ml-4 mt-1">
+                        <li className="text-sm">- Solutions Architect Associate</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div className="mt-auto pt-3"></div>
               </div>
-              <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-semibold mb-4">機械学習フレームワーク</h3>
-                <ul className="space-y-2 text-gray-700">
-                  <li>• PyTorch/Transformers</li>
-                  <li>• Scikit-learn</li>
-                  <li>• OpenCV</li>
-                  <li>• Ultralytics</li>
-                  <li>• vLLM</li>
-                  <li>• Streamlit/Gradio</li>
-                </ul>
+              <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
+                <div className="flex-grow">
+                  <h3 className="text-xl font-semibold mb-4">機械学習フレームワーク</h3>
+                  <ul className="space-y-2 text-gray-700">
+                    <li>• PyTorch/Transformers</li>
+                    <li>• Scikit-learn</li>
+                    <li>• OpenCV</li>
+                    <li>• Ultralytics</li>
+                    <li>• vLLM</li>
+                    <li>• Streamlit/Gradio</li>
+                  </ul>
+                </div>
+                <div className="mt-auto pt-3"></div>
               </div>
-              <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-semibold mb-4">データ処理ライブラリ</h3>
-                <ul className="space-y-2 text-gray-700">
-                  <li>• Pandas/Polars</li>
-                  <li>• NumPy</li>
-                  <li>• Matplotlib</li>
-                  <li>• Jupyter</li>
-                  <li>• wandb</li>
-                </ul>
+              <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
+                <div className="flex-grow">
+                  <h3 className="text-xl font-semibold mb-4">データ処理ライブラリ</h3>
+                  <ul className="space-y-2 text-gray-700">
+                    <li>• Pandas/Polars</li>
+                    <li>• NumPy</li>
+                    <li>• Matplotlib</li>
+                    <li>• Jupyter</li>
+                    <li>• wandb</li>
+                  </ul>
+                </div>
+                <div className="mt-auto pt-3"></div>
               </div>
             </div>
           </div>
@@ -109,13 +120,15 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">プロジェクト</h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold mb-3">サブスク事業の価値計算</h3>
-              <p className="text-gray-700 mb-4">
-                生存分析や金融工学の手法を用いて事業価値を統計的・金融工学的に妥当な手法で算出。
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-stretch">
+            <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
+              <div className="flex-grow">
+                <h3 className="text-xl font-semibold mb-3">サブスク事業の価値計算</h3>
+                <p className="text-gray-700 mb-4">
+                  生存分析や金融工学の手法を用いて事業価値を統計的・金融工学的に妥当な手法で算出。
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2 mt-auto">
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">SQL</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">生存分析</span>
@@ -123,12 +136,14 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold mb-3">ドメイン特化OCR機能開発</h3>
-              <p className="text-gray-700 mb-4">
-                自社データに特化した高精度OCRエンジンを開発。プロダクションレベルのコード整備と高速化を実現。
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
+            <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
+              <div className="flex-grow">
+                <h3 className="text-xl font-semibold mb-3">ドメイン特化OCR機能開発</h3>
+                <p className="text-gray-700 mb-4">
+                  自社データに特化した高精度OCRエンジンを開発。プロダクションレベルのコード整備と高速化を実現。
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2 mt-auto">
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Cython</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">OpenCV</span>
@@ -136,12 +151,14 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold mb-3">画像圧縮最適化</h3>
-              <p className="text-gray-700 mb-4">
-                画質を維持した圧縮率の最適化により年間数千万円規模のクラウド利用料削減を実現。
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
+            <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
+              <div className="flex-grow">
+                <h3 className="text-xl font-semibold mb-3">画像圧縮最適化</h3>
+                <p className="text-gray-700 mb-4">
+                  画質を維持した圧縮率の最適化により年間数千万円規模のクラウド利用料削減を実現。
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2 mt-auto">
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">AWS Lambda</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">wandb</span>
@@ -149,150 +166,174 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold mb-3">Deep Learning画像最適化</h3>
-              <p className="text-gray-700 mb-4">
-                深層学習による画像処理でコスト削減可能性を実証。デモ用iOSアプリを作成し、ユーザー体験を損なわないことも検証。
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
+            <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
+              <div className="flex-grow">
+                <h3 className="text-xl font-semibold mb-3">Deep Learning画像最適化</h3>
+                <p className="text-gray-700 mb-4">
+                  深層学習による画像処理でコスト削減可能性を実証。デモ用iOSアプリを作成し、ユーザー体験を損なわないことも検証。
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2 mt-auto">
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">PyTorch</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">ONNX</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">iOS</span>
               </div>
             </div>
             
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold mb-3">画像データ前処理自動化</h3>
-              <p className="text-gray-700 mb-4">
-                自社データに特化した深層学習モデルを作成。既製品より精度の高い前処理パイプラインを構築し、後段処理における人件費を削減。
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
+            <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
+              <div className="flex-grow">
+                <h3 className="text-xl font-semibold mb-3">画像データ前処理自動化</h3>
+                <p className="text-gray-700 mb-4">
+                  自社データに特化した深層学習モデルを作成。既製品より精度の高い前処理パイプラインを構築し、後段処理における人件費を削減。
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2 mt-auto">
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Transformers</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Ultralytics</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Label Studio</span>
               </div>
             </div>
             
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold mb-3">言語処理基盤の構築</h3>
-              <p className="text-gray-700 mb-4">
-                自社の言語処理基盤を構築中。大規模言語モデルを活用したシステム開発に従事。
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
+            <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
+              <div className="flex-grow">
+                <h3 className="text-xl font-semibold mb-3">言語処理基盤の構築</h3>
+                <p className="text-gray-700 mb-4">
+                  自社の言語処理基盤を構築中。大規模言語モデルを活用したシステム開発に従事。
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2 mt-auto">
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Transformers</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">LLM</span>
               </div>
             </div>
             
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold mb-3">AIコーディング文化の布教</h3>
-              <p className="text-gray-700 mb-4">
-                自社チームにAIコーディング文化を布教。ちなみにこのサイトは100%自然言語指示によるAIコーディングで作成されている。
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
+            <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
+              <div className="flex-grow">
+                <h3 className="text-xl font-semibold mb-3">AIコーディング文化の布教</h3>
+                <p className="text-gray-700 mb-4">
+                  自社チームにAIコーディング文化を布教。ちなみにこのサイトは100%自然言語指示によるAIコーディングで作成されている。
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2 mt-auto">
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Cursor</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">GitHub Copilot</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Claude Code</span>
               </div>
             </div>
             
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold mb-3">政治資金収支報告書の情報抽出</h3>
-              <div className="text-gray-700 mb-4">
-                OCRやLLMを活用した政治資金収支報告書からの情報抽出システムを開発。
-                <span className="text-blue-600 underline decoration-dotted cursor-help relative inline-block group ml-1 pb-1">
-                  学会発表・論文投稿を実施
-                  <span className="absolute left-0 top-full -mt-1 w-80 bg-gray-800 text-white text-sm p-3 rounded-lg shadow-lg invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300 z-20 pointer-events-none group-hover:pointer-events-auto">
-                    <span className="block space-y-2">
-                      <a 
-                        href="https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2H1OS3a01/_article/-char/ja/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block text-blue-300 hover:text-blue-100 transition"
-                      >
-                        • JSAI2023論文
-                      </a>
-                      <a 
-                        href="https://www.jaesnet.org/archives/report-archives/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block text-blue-300 hover:text-blue-100 transition"
-                      >
-                        • 選挙学会発表
-                      </a>
+            <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
+              <div className="flex-grow">
+                <h3 className="text-xl font-semibold mb-3">政治資金収支報告書の情報抽出</h3>
+                <div className="text-gray-700 mb-4">
+                  OCRやLLMを活用した政治資金収支報告書からの情報抽出システムを開発。
+                  <span className="text-blue-600 underline decoration-dotted cursor-help relative inline-block group ml-1 pb-1">
+                    学会発表・論文投稿を実施
+                    <span className="absolute left-0 top-full -mt-1 w-80 bg-gray-800 text-white text-sm p-3 rounded-lg shadow-lg invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300 z-20 pointer-events-none group-hover:pointer-events-auto">
+                      <span className="block space-y-2">
+                        <a 
+                          href="https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2H1OS3a01/_article/-char/ja/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block text-blue-300 hover:text-blue-100 transition"
+                        >
+                          • JSAI2023論文
+                        </a>
+                        <a 
+                          href="https://www.jaesnet.org/archives/report-archives/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block text-blue-300 hover:text-blue-100 transition"
+                        >
+                          • 選挙学会発表
+                        </a>
+                      </span>
                     </span>
-                  </span>
-                </span>。
+                  </span>。
+                </div>
               </div>
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap gap-2 mt-auto">
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">OCR</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">LLM</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Label Studio</span>
               </div>
             </div>
             
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold mb-3">自社プロダクト掲載の広告分析</h3>
-              <p className="text-gray-700 mb-4">
-                広告の滞在率に影響する要素を分析、広告関係者へ知見を共有。
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
+            <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
+              <div className="flex-grow">
+                <h3 className="text-xl font-semibold mb-3">自社プロダクト掲載の広告分析</h3>
+                <p className="text-gray-700 mb-4">
+                  広告の滞在率に影響する要素を分析、広告関係者へ知見を共有。
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2 mt-auto">
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Label Studio</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Google Cloud Vision API</span>
               </div>
             </div>
             
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold mb-3">データ分析コンペティション</h3>
-              <div className="text-gray-700 mb-4">
-                Kaggleを中心とした機械学習コンペティションで
-                <span className="text-blue-600 underline decoration-dotted cursor-help relative inline-block group mx-1 pb-1">
-                  複数回入賞
-                  <span className="absolute left-0 top-full -mt-1 w-96 bg-gray-800 text-white text-sm p-3 rounded-lg shadow-lg invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300 z-20 pointer-events-none group-hover:pointer-events-auto">
-                    <span className="block space-y-2">
-                      <span className="block">
-                        • Kaggle <a 
-                          href="https://www.kaggle.com/competitions/us-patent-phrase-to-phrase-matching"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-blue-300 hover:text-blue-100 transition"
-                        >U.S. Patent Phrase to Phrase Matching</a>: 金メダル (8位)
-                      </span>
-                      <span className="block">
-                        • Kaggle <a 
-                          href="https://www.kaggle.com/competitions/feedback-prize-english-language-learning"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-blue-300 hover:text-blue-100 transition"
-                        >Feedback Prize - English Language Learning</a>: 金メダル (15位)
-                      </span>
-                      <span className="block">
-                        • Solafune <a 
-                          href="https://solafune.com/ja/competitions/7a1fc5e3-49bd-4ec1-8378-974951398c98?menu=about&tab=overview&modal=%22%22"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-blue-300 hover:text-blue-100 transition"
-                        >衛星画像の5倍超解像度化 (for OSS)</a>: 優勝 (1位)
+            <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
+              <div className="flex-grow">
+                <h3 className="text-xl font-semibold mb-3">データ分析コンペティション</h3>
+                <div className="text-gray-700 mb-4">
+                  Kaggleを中心とした機械学習コンペティションで
+                  <span className="text-blue-600 underline decoration-dotted cursor-help relative inline-block group mx-1 pb-1">
+                    複数回入賞
+                    <span className="absolute left-0 top-full -mt-1 w-96 bg-gray-800 text-white text-sm p-3 rounded-lg shadow-lg invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300 z-20 pointer-events-none group-hover:pointer-events-auto">
+                      <span className="block space-y-2">
+                        <span className="block">
+                          • Kaggle <a 
+                            href="https://www.kaggle.com/competitions/us-patent-phrase-to-phrase-matching"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-300 hover:text-blue-100 transition"
+                          >U.S. Patent Phrase to Phrase Matching</a>: 金メダル (8位)
+                        </span>
+                        <span className="block">
+                          • Kaggle <a 
+                            href="https://www.kaggle.com/competitions/feedback-prize-english-language-learning"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-300 hover:text-blue-100 transition"
+                          >Feedback Prize - English Language Learning</a>: 金メダル (15位)
+                        </span>
+                        <span className="block">
+                          • Solafune <a 
+                            href="https://solafune.com/ja/competitions/7a1fc5e3-49bd-4ec1-8378-974951398c98?menu=about&tab=overview&modal=%22%22"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-300 hover:text-blue-100 transition"
+                          >衛星画像の5倍超解像度化 (for OSS)</a>: 優勝 (1位)
+                        </span>
+                        <span className="block">
+                          • MUANA <a 
+                            href="https://muana.connpass.com/event/287406/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-300 hover:text-blue-100 transition"
+                          >AIミュージックバトル！『弁財天〜第二幕〜』</a>: 準優勝 (2位)
+                        </span>
                       </span>
                     </span>
-                  </span>
-                </span>。深層学習を用いた自然言語・画像処理分野で実績。
+                  </span>。深層学習を用いた自然言語・画像処理分野で実績。
+                </div>
               </div>
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap gap-2 mt-auto">
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Transformers</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">wandb</span>
               </div>
             </div>
             
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold mb-3">競技プログラミング</h3>
-              <p className="text-gray-700 mb-4">
-                半数以上のIT企業において、アルゴリズム能力についてはカンストと言える実力。AtCoder Algorithm: 水色 (最高: 1356)。Heuristicへ参加するタイミングを伺っている。
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
+            <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
+              <div className="flex-grow">
+                <h3 className="text-xl font-semibold mb-3">競技プログラミング</h3>
+                <p className="text-gray-700 mb-4">
+                  半数以上のIT企業において、アルゴリズム能力についてはカンストと言える実力。AtCoder Algorithm: 水色 (最高: 1356)。Heuristicへ参加するタイミングを伺っている。
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2 mt-auto">
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Cython</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">NumPy</span>
@@ -310,16 +351,18 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">私が登場する出版物</h2>
             <div className="space-y-4 sm:space-y-6">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold mb-3">謝辞掲載</h3>
-              <p className="text-lg text-gray-700 mb-2">
-                「PolarsとPandasで学ぶ データ処理アイデアレシピ55」
-              </p>
-              <p className="text-gray-600 mb-3">著者: 冨山 吉孝、早川 裕樹、齋藤 慎一朗</p>
-              <p className="text-gray-700 mb-4">
-                本書の謝辞に掲載いただきました。データ処理に関する知見の共有や技術的なフィードバックを行いました。
-              </p>
-              <div className="flex flex-wrap gap-4">
+            <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
+              <div className="flex-grow">
+                <h3 className="text-xl font-semibold mb-3">謝辞掲載</h3>
+                <p className="text-lg text-gray-700 mb-2">
+                  「PolarsとPandasで学ぶ データ処理アイデアレシピ55」
+                </p>
+                <p className="text-gray-600 mb-3">著者: 冨山 吉孝、早川 裕樹、齋藤 慎一朗</p>
+                <p className="text-gray-700 mb-4">
+                  本書の謝辞に掲載いただきました。データ処理に関する知見の共有や技術的なフィードバックを行いました。
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-4 mt-auto">
                 <a
                   href="https://bookclub.kodansha.co.jp/product?item=0000398238"
                   target="_blank"
