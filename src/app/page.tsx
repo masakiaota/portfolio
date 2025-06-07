@@ -7,22 +7,22 @@ export default function Home() {
   return (
     <>
       {/* ヒーローセクション */}
-      <section id="home" className="py-20">
-        <div className="container mx-auto px-6">
+      <section id="home" className="py-12 sm:py-16 md:py-20">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center">
-              <h1 className="text-5xl font-bold mb-4 text-black">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-black">
                 Masaki Aota
               </h1>
-            <h2 className="text-2xl font-semibold mb-3 text-gray-800">
+            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3 text-gray-800">
               Machine Learning Engineer & Data Scientist
             </h2>
-            <p className="text-xl text-gray-700 mb-8">
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-6 sm:mb-8">
               Kaggle Master | AtCoder水色
             </p>
             {/* プロフィール写真 */}
-            <div className="mb-8">
-              <div className="w-48 h-48 mx-auto relative overflow-hidden rounded-full">
+            <div className="mb-6 sm:mb-8">
+              <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 mx-auto relative overflow-hidden rounded-full">
                 <Image
                   src="/profile.JPG"
                   alt="Masaki Aota"
@@ -42,19 +42,19 @@ export default function Home() {
       </section>
 
       {/* 自己紹介セクション */}
-      <section id="about" className="py-20 bg-gray-50">
-        <div className="container mx-auto px-6">
+      <section id="about" className="py-12 sm:py-16 md:py-20 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">自己紹介</h2>
-            <p className="text-lg text-gray-700 mb-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">自己紹介</h2>
+            <p className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6">
               早稲田大学大学院卒業後、2021年より大手メディア企業で機械学習エンジニア・データサイエンティストとして活動しています。
-              生存分析、LTV計算、画像処理、自然言語処理など幅広い分野での業務経験があります。
+              生存分析、ABテスト、画像処理、自然言語処理など幅広い分野での業務経験があります。
             </p>
-            <p className="text-lg text-gray-700 mb-8">
+            <p className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8">
               研究開発部署ではPoCに従事し、新機能の実装や年間数千万円規模のコスト削減を達成。
               現在はB2B事業部署で、自然言語処理を活用したシステム開発に携わっています。
             </p>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
               <div className="bg-white rounded-lg shadow-md p-6">
                 <h3 className="text-xl font-semibold mb-4">プログラミング言語</h3>
                 <ul className="space-y-2 text-gray-700">
@@ -105,11 +105,11 @@ export default function Home() {
       </section>
 
       {/* プロジェクトセクション */}
-      <section id="projects" className="py-20">
-        <div className="container mx-auto px-6">
+      <section id="projects" className="py-12 sm:py-16 md:py-20">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">プロジェクト</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">プロジェクト</h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             <div className="bg-white rounded-lg shadow-md p-6">
               <h3 className="text-xl font-semibold mb-3">サブスク事業の価値計算</h3>
               <p className="text-gray-700 mb-4">
@@ -305,11 +305,11 @@ export default function Home() {
       </section>
 
       {/* 私が登場する出版物セクション */}
-      <section id="publications" className="py-20 bg-gray-50">
-        <div className="container mx-auto px-6">
+      <section id="publications" className="py-12 sm:py-16 md:py-20 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">私が登場する出版物</h2>
-            <div className="space-y-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">私が登場する出版物</h2>
+            <div className="space-y-4 sm:space-y-6">
             <div className="bg-white rounded-lg shadow-md p-6">
               <h3 className="text-xl font-semibold mb-3">謝辞掲載</h3>
               <p className="text-lg text-gray-700 mb-2">
@@ -420,9 +420,9 @@ export default function Home() {
       </section>
 
       {/* お問い合わせセクション */}
-      <section id="contact" className="py-20">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">お問い合わせ</h2>
+      <section id="contact" className="py-12 sm:py-16 md:py-20">
+        <div className="container mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">お問い合わせ</h2>
           <div className="max-w-2xl mx-auto">
             <form 
               className="bg-white rounded-lg shadow-md p-8"
