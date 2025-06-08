@@ -122,7 +122,7 @@ export default function ProjectsSection() {
                 Kaggleを中心とした機械学習コンペティションで
                 <span className="text-blue-600 underline decoration-dotted cursor-help relative inline-block group mx-1 pb-1">
                   複数回入賞
-                  <span className="absolute left-0 top-full -mt-1 w-64 sm:w-72 md:w-80 max-w-[calc(100vw-2rem)] bg-gray-800 text-white text-sm p-3 rounded-lg shadow-lg invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300 z-20 pointer-events-none group-hover:pointer-events-auto">
+                  <span className="absolute left-0 top-full -mt-1 w-60 max-w-[calc(100vw-4rem)] bg-gray-800 text-white text-sm p-3 rounded-lg shadow-lg invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300 z-20 pointer-events-none group-hover:pointer-events-auto">
                     <span className="block space-y-2">
                       <span className="block">
                         • Kaggle <a 

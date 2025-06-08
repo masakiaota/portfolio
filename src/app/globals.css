@@ -22,8 +22,12 @@ body {
 }
 
 * {
-  max-width: 100%;
   box-sizing: border-box;
+}
+
+/* 画像やメディア要素のみに幅制限を適用 */
+img, video, canvas, svg {
+  max-width: 100%;
 }
 
 /* タイポグラフィの基本設定 */
