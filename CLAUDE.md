@@ -134,3 +134,6 @@ git push origin main
 - **Kaggle**: https://www.kaggle.com/masakiaota/competitions
 - **はてなブログ**: https://aotamasaki.hatenablog.com/
 - **LinkedIn**: www.linkedin.com/in/masaki-aota
+
+### Memories
+- ヘッダーの色はお気に入りなので変更しない
