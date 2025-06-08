@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import SocialLinks from '@/components/SocialLinks';
 
 export default function HomeSection() {
@@ -21,13 +20,20 @@ export default function HomeSection() {
             </p>
             <div className="mb-6 sm:mb-8">
               <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 mx-auto relative overflow-hidden rounded-full">
-                <Image
-                  src="/profile.JPG"
-                  alt="Masaki Aota"
-                  width={192}
-                  height={192}
-                  className="object-cover scale-150"
-                />
+                <picture>
+                  <source
+                    srcSet="/profile-48.webp 48w, /profile-96.webp 96w, /profile-192.webp 192w, /profile-384.webp 384w"
+                    sizes="(max-width: 640px) 128px, (max-width: 768px) 160px, 192px"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/profile-192.jpg"
+                    alt="Masaki Aota"
+                    width={192}
+                    height={192}
+                    className="object-cover scale-150"
+                  />
+                </picture>
               </div>
             </div>
             <div className="flex justify-center">
