@@ -72,7 +72,7 @@ export default function SocialLinks({ className = '' }: SocialLinksProps) {
         >
           {link.icon}
           {link.tooltip && (
-            <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs bg-slate-800 text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+            <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs bg-slate-800 text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity max-w-[calc(100vw-4rem)] pointer-events-none">
               {link.tooltip}
             </span>
           )}
