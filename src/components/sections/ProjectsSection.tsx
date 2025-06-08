@@ -77,7 +77,7 @@ export default function ProjectsSection() {
                 OCRやLLMを活用した政治資金収支報告書からの情報抽出システムを開発。
                 <span className="text-blue-600 underline decoration-dotted cursor-help relative inline-block group ml-1 pb-1">
                   学会発表・論文投稿を実施
-                  <span className="absolute left-0 top-full -mt-1 w-80 bg-gray-800 text-white text-sm p-3 rounded-lg shadow-lg invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300 z-20 pointer-events-none group-hover:pointer-events-auto">
+                  <span className="absolute left-0 top-full -mt-1 w-72 sm:w-80 bg-gray-800 text-white text-sm p-3 rounded-lg shadow-lg invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300 z-20 pointer-events-none group-hover:pointer-events-auto">
                     <span className="block space-y-2">
                       <a 
                         href="https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2H1OS3a01/_article/-char/ja/"
@@ -122,7 +122,7 @@ export default function ProjectsSection() {
                 Kaggleを中心とした機械学習コンペティションで
                 <span className="text-blue-600 underline decoration-dotted cursor-help relative inline-block group mx-1 pb-1">
                   複数回入賞
-                  <span className="absolute left-0 top-full -mt-1 w-96 bg-gray-800 text-white text-sm p-3 rounded-lg shadow-lg invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300 z-20 pointer-events-none group-hover:pointer-events-auto">
+                  <span className="absolute left-0 top-full -mt-1 w-80 sm:w-96 bg-gray-800 text-white text-sm p-3 rounded-lg shadow-lg invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300 z-20 pointer-events-none group-hover:pointer-events-auto">
                     <span className="block space-y-2">
                       <span className="block">
                         • Kaggle <a 
