@@ -44,7 +44,7 @@ const socialLinks: SocialLink[] = [
   {
     name: 'Kaggle',
     href: 'https://www.kaggle.com/masakiaota/competitions',
-    tooltip: 'Kaggle Competitions',
+    tooltip: 'Kaggle',
     icon: (
       <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
         <path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.144 0 .236.06.285.18.046.149.034.255-.036.315l-6.555 6.344 6.836 8.507c.095.104.117.208.07.334"/>
@@ -66,13 +66,12 @@ export default function SocialLinks({ className = '' }: SocialLinksProps) {
           href={link.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-slate-600 hover:text-blue-600 transition-colors group relative"
+          className="text-slate-600 hover:text-blue-600 transition-colors group relative inline-flex"
           aria-label={link.tooltip || link.name}
-          title={link.tooltip || link.name}
         >
           {link.icon}
           {link.tooltip && (
-            <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs bg-slate-800 text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity max-w-[calc(100vw-4rem)] pointer-events-none">
+            <span className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 text-xs bg-slate-800 text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-10">
               {link.tooltip}
             </span>
           )}
