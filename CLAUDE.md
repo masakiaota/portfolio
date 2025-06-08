@@ -31,13 +31,13 @@ npm run lint
 
 ## プロジェクト概要
 
-- **目的**: 機械学習エンジニアとしてのポートフォリオサイト作成
-- **技術スタック**: Next.js (React), TypeScript, Tailwind CSS
+- **目的**: 機械学習エンジニアとしてのポートフォリオサイト
+- **技術スタック**: Next.js 15.3.3 (React), TypeScript, Tailwind CSS v4
 - **ホスティング**: Cloudflare Pages
-- **ソース管理**: GitHub
-- **開発環境**: MacBook Air (M3)
+- **公開URL**: https://masakiaota.pages.dev/
+- **リポジトリ**: https://github.com/masakiaota/portfolio
 
-## 現在のアーキテクチャ
+## アーキテクチャ
 
 ### 構成
 - **シングルページアプリケーション**: セクション別コンポーネントを`src/app/page.tsx`で統合
@@ -49,7 +49,7 @@ npm run lint
 src/
 ├── app/
 │   ├── page.tsx      # メインページ（セクションコンポーネント統合）
-│   ├── layout.tsx    # ルートレイアウト
+│   ├── layout.tsx    # ルートレイアウト + SEO/OGP設定
 │   ├── globals.css   # グローバルスタイル + カスタム背景色
 │   └── favicon.ico
 └── components/
@@ -65,104 +65,66 @@ src/
     └── ContactForm.tsx # お問い合わせフォーム（EmailJS）
 ```
 
-### 主要セクション構成
-1. **Home** (#home): ヒーローセクション、プロフィール写真、ソーシャルリンク
-2. **About** (#about): 自己紹介、スキルセット（4つのカード形式）
-3. **Projects** (#projects): プロジェクト一覧（12のプロジェクト、カードグリッド表示）
-4. **Publications** (#publications): 出版物・登場書籍（3つの出版物）
+### 主要セクション
+1. **Home** (#home): ヒーロー、プロフィール写真、ソーシャルリンク
+2. **About** (#about): 自己紹介、スキルセット（4つのカード）
+3. **Projects** (#projects): プロジェクト一覧（12のプロジェクト、グリッド表示）
+4. **Publications** (#publications): 出版物・書籍（3つ）
 5. **Contact** (#contact): お問い合わせフォーム（EmailJS実装済み）
 
 ### 技術設定
 - **TypeScript**: `@/*`エイリアスで`./src/*`へのパスマッピング、strict mode有効
-- **Tailwind CSS**: v4使用、ユーティリティクラスベースのスタイリング
-- **Next.js**: 15.3.3、App Router使用、Turbopack対応
+- **Tailwind CSS**: v4使用、ユーティリティクラスベース
+- **Next.js**: App Router、Turbopack対応
+- **SEO**: メタタグ、OGP、Twitter Cards完備
+- **画像最適化**: WebP形式、複数サイズ対応
 
-### 現在のデザイン仕様
-- **背景色構成**:
-  - Home、Projects、Contact: `bg-light-gray` (#FCFCFC) - ほぼ白だが微妙にグレー
-  - About、Publications: `bg-slate-50` - 薄いグレー
-- **フォント**: 日本語フォント最適化済み（Hiragino, Meiryo等）
-- **カードレイアウト**: flexboxによる高さ揃え、統一スタイリング
+### デザイン仕様
+- **背景色**:
+  - Home、Projects、Contact: `bg-light-gray` (#FCFCFC)
+  - About、Publications: `bg-slate-50`
+- **フォント**: 日本語フォント最適化済み
+- **カードレイアウト**: flexboxによる高さ揃え
 
 ## デプロイ設定
 
-### GitHub連携
+### 通常のデプロイ手順
 ```bash
 git add .
 git commit -m "コミットメッセージ"
 git push origin main
 ```
-**リポジトリURL**: https://github.com/masakiaota/portfolio
 
 ### Cloudflare Pages設定
-1. Cloudflareダッシュボードでプロジェクト作成
-2. GitHubリポジトリを接続
-3. ビルド設定:
-   - Framework preset: Next.js
-   - Build command: `npm run build`
-   - Build output directory: `.next`
-4. 継続的デプロイメント: mainブランチへのpushで自動デプロイ
+- Framework preset: Next.js
+- Build command: `npm run build`
+- Build output directory: `.next`
+- 継続的デプロイメント: mainブランチへのpushで自動デプロイ
 
-## 開発進捗
+## 重要な設定・機能
 
-### 完了済みフェーズ
-1. ✅ **フェーズ1: 基本コンテンツの充実**
-   - 実際のプロジェクト情報とスキル詳細を追加
-   - プロフィール写真の配置とスタイリング
-   - ソーシャルリンクの実装
+### EmailJS設定
+- サービス: `aotamasakimail+fromportfolio@gmail.com`
+- お問い合わせフォームで使用中
 
-2. ✅ **フェーズ2: デザイン基盤強化**
-   - カードレイアウトの最適化（統一スタイル、flexbox高さ揃え）
-   - タイポグラフィとフォントの最適化（日本語フォント、見出し階層）
-   - カラーパレットの統一とコントラスト改善（カスタム背景色実装）
+### 画像最適化
+- プロフィール画像: WebP形式、複数サイズ（48px, 96px, 192px, 384px）
+- Faviconセット: 16px, 32px, 48px, 192px, 512px + manifest.json
 
-### 完了済みフェーズ（続き）
-3. ✅ **フェーズ8: デプロイ準備**
-   - GitHubリポジトリへのプッシュ（SSH認証設定）
-   - Cloudflare Pagesへのデプロイ設定（Static Export対応）
-   - **公開URL**: https://masakiaota.pages.dev/
-
-4. ✅ **フェーズ4: 機能拡張**
-   - お問い合わせフォーム実装（EmailJS）
-   - メール送信機能（aotamasakimail+fromportfolio@gmail.com）
-   - フォームバリデーションと送信状態管理
-
-5. ✅ **フェーズ5: コンポーネント分割・保守性向上**
-   - 巨大な`page.tsx`を各セクション別コンポーネントに分割
-   - `src/components/sections/`ディレクトリでの管理
-   - コンポーネントベースの構造による保守性向上
-
-6. ✅ **フェーズ6: favicon作成**
-   - 複数サイズのfavicon生成（16px, 32px, 48px, 192px, 512px）
-   - manifest.json対応
-   - Apple Touch Icon対応
-
-7. ✅ **フェーズ7: プロフィール画像最適化**
-   - WebP形式への変換によるファイルサイズ98%削減
-   - 複数サイズ対応（48px, 96px, 192px, 384px）
-   - パフォーマンス向上
-
-### 次の予定作業（優先度順）
-
-#### 優先度：高（すぐにやるべき）
-1. **基本的なメタタグ拡張** - SEO基盤、OGP対応
-
-#### 優先度：中（できればやりたい）
-2. **英語版対応** - 国際展開を考えるなら重要、i18n実装
-3. **sitemap.xml生成** - SEO向上、Next.jsで自動生成可能
-4. **robots.txt作成** - SEO基盤
-5. **Twitter Cards対応** - ソーシャル共有時の見栄え
-
-#### 優先度：低（時間があれば）
-6. **構造化データ(JSON-LD)実装** - 高度なSEO、時間がかかる
+### SEO/OGP設定
+- 基本メタタグ完備（description, keywords, canonical等）
+- Open Graph Protocol対応
+- Twitter Cards対応
+- 日本語最適化済み
 
 ## 開発者情報
 
-### ソーシャルメディア・プロフィール
+### ソーシャルリンク
 - **GitHub**: https://github.com/masakiaota
 - **Kaggle**: https://www.kaggle.com/masakiaota/competitions
 - **はてなブログ**: https://aotamasaki.hatenablog.com/
 - **LinkedIn**: www.linkedin.com/in/masaki-aota
 
-### Memories
+### メモ
 - ヘッダーの色はお気に入りなので変更しない
+- 基本機能は完成済み、追加開発の必要性は低い
