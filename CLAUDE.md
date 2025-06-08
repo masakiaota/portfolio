@@ -40,7 +40,7 @@ npm run lint
 ## 現在のアーキテクチャ
 
 ### 構成
-- **シングルページアプリケーション**: すべてのコンテンツが`src/app/page.tsx`に統合
+- **シングルページアプリケーション**: セクション別コンポーネントを`src/app/page.tsx`で統合
 - **スムーズスクロールナビゲーション**: アンカーリンクによるセクション間移動
 - **レスポンシブデザイン**: Tailwind CSSによるモバイル対応
 
@@ -48,11 +48,17 @@ npm run lint
 ```
 src/
 ├── app/
-│   ├── page.tsx      # メインページ（全セクション統合）
+│   ├── page.tsx      # メインページ（セクションコンポーネント統合）
 │   ├── layout.tsx    # ルートレイアウト
 │   ├── globals.css   # グローバルスタイル + カスタム背景色
 │   └── favicon.ico
 └── components/
+    ├── sections/     # 各セクションコンポーネント
+    │   ├── HomeSection.tsx       # ヒーローセクション
+    │   ├── AboutSection.tsx      # 自己紹介・スキル
+    │   ├── ProjectsSection.tsx   # プロジェクト一覧
+    │   ├── PublicationsSection.tsx # 出版物
+    │   └── ContactSection.tsx    # お問い合わせフォーム
     ├── Header.tsx    # スティッキーヘッダー
     ├── Footer.tsx    # フッター
     ├── SocialLinks.tsx # ソーシャルメディアリンク
@@ -120,6 +126,11 @@ git push origin main
    - お問い合わせフォーム実装（EmailJS）
    - メール送信機能（aotamasakimail+fromportfolio@gmail.com）
    - フォームバリデーションと送信状態管理
+
+5. ✅ **フェーズ5: コンポーネント分割・保守性向上**
+   - 巨大な`page.tsx`を各セクション別コンポーネントに分割
+   - `src/components/sections/`ディレクトリでの管理
+   - コンポーネントベースの構造による保守性向上
 
 ### 次の予定作業
 1. セクション間の余白とレイアウト最適化
