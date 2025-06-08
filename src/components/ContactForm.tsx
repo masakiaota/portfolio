@@ -136,9 +136,6 @@ export default function ContactForm() {
         </div>
       )}
       
-      <p className="text-center text-slate-600 text-sm mt-6">
-        ※ 技術的なお問い合わせやお仕事のご相談もお気軽にどうぞ
-      </p>
     </div>
   );
 }
