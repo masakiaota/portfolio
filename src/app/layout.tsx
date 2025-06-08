@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Masaki Aota | 機械学習エンジニア",
-  description: "Kaggle Master・AtCoder水色の機械学習エンジニア。生存分析、自然言語処理、画像処理の専門家として年間数千万円規模のコスト削減実績。Python、PyTorch、AWS・GCP認定取得。",
+  description: "Masaki Aota. Kaggle Master・AtCoder水色の機械学習エンジニア。技術スタックやプロジェクト等の紹介。",
   keywords: ["機械学習", "データサイエンス", "Python", "Kaggle", "AtCoder", "自然言語処理", "画像処理", "生存分析", "PyTorch", "AWS", "GCP", "機械学習エンジニア", "ポートフォリオ"],
   authors: [{ name: "Masaki Aota" }],
   creator: "Masaki Aota",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     url: 'https://masakiaota.pages.dev',
     siteName: 'Masaki Aota Portfolio',
     title: 'Masaki Aota | 機械学習エンジニア',
-    description: 'Kaggle Master・AtCoder水色の機械学習エンジニア。生存分析、自然言語処理、画像処理の専門家として年間数千万円規模のコスト削減実績。Python、PyTorch、AWS・GCP認定取得。',
+    description: 'Masaki Aota. Kaggle Master・AtCoder水色の機械学習エンジニア。技術スタックやプロジェクト等の紹介。',
     images: [
       {
         url: '/profile-192.webp',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary',
     title: 'Masaki Aota | 機械学習エンジニア',
-    description: 'Kaggle Master・AtCoder水色の機械学習エンジニア。年間数千万円規模のコスト削減実績を持つ専門家のポートフォリオ。',
+    description: 'Masaki Aota. Kaggle Master・AtCoder水色の機械学習エンジニア。技術スタックやプロジェクト等の紹介。',
     images: ['/profile-192.webp'],
   },
   icons: {
