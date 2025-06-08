@@ -1,3 +1,5 @@
+import Card from '@/components/Card';
+
 export default function AboutSection() {
   return (
     <section id="about" className="py-12 sm:py-16 md:py-20 bg-slate-50">
@@ -13,61 +15,51 @@ export default function AboutSection() {
             現在はB2B事業部署で、自然言語処理を活用したシステム開発に携わっています。
           </p>
           <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 items-stretch">
-            <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
-              <div className="flex-grow">
-                <h3 className="text-xl font-semibold mb-4 text-slate-900">プログラミング言語</h3>
-                <ul className="space-y-2 text-slate-700">
-                  <li>• Python</li>
-                  <li>• SQL</li>
-                </ul>
-              </div>
-              <p className="text-sm text-slate-600 mt-auto pt-3">※ 業務に必要な言語はキャッチアップします。</p>
-            </div>
-            <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
-              <div className="flex-grow">
-                <h3 className="text-xl font-semibold mb-4 text-slate-900">クラウドプラットフォーム</h3>
-                <ul className="space-y-2 text-slate-700">
-                  <li>• Google Cloud Platform
-                    <ul className="ml-4 mt-1">
-                      <li className="text-sm">- Professional Data Engineer</li>
-                    </ul>
-                  </li>
-                  <li>• AWS
-                    <ul className="ml-4 mt-1">
-                      <li className="text-sm">- Solutions Architect Associate</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div className="mt-auto pt-3"></div>
-            </div>
-            <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
-              <div className="flex-grow">
-                <h3 className="text-xl font-semibold mb-4 text-slate-900">機械学習フレームワーク</h3>
-                <ul className="space-y-2 text-slate-700">
-                  <li>• PyTorch/Transformers</li>
-                  <li>• Scikit-learn</li>
-                  <li>• OpenCV</li>
-                  <li>• Ultralytics</li>
-                  <li>• vLLM</li>
-                  <li>• Streamlit/Gradio</li>
-                </ul>
-              </div>
-              <div className="mt-auto pt-3"></div>
-            </div>
-            <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
-              <div className="flex-grow">
-                <h3 className="text-xl font-semibold mb-4 text-slate-900">データ処理ライブラリ</h3>
-                <ul className="space-y-2 text-slate-700">
-                  <li>• Pandas/Polars</li>
-                  <li>• NumPy</li>
-                  <li>• Matplotlib</li>
-                  <li>• Jupyter</li>
-                  <li>• wandb</li>
-                </ul>
-              </div>
-              <div className="mt-auto pt-3"></div>
-            </div>
+            <Card
+              title="プログラミング言語"
+              footer={<p className="text-sm text-slate-600">※ 業務に必要な言語はキャッチアップします。</p>}
+            >
+              <ul className="space-y-2 text-slate-700 mb-4">
+                <li>• Python</li>
+                <li>• SQL</li>
+              </ul>
+            </Card>
+
+            <Card title="クラウドプラットフォーム">
+              <ul className="space-y-2 text-slate-700">
+                <li>• Google Cloud Platform
+                  <ul className="ml-4 mt-1">
+                    <li className="text-sm">- Professional Data Engineer</li>
+                  </ul>
+                </li>
+                <li>• AWS
+                  <ul className="ml-4 mt-1">
+                    <li className="text-sm">- Solutions Architect Associate</li>
+                  </ul>
+                </li>
+              </ul>
+            </Card>
+
+            <Card title="機械学習フレームワーク">
+              <ul className="space-y-2 text-slate-700">
+                <li>• PyTorch/Transformers</li>
+                <li>• Scikit-learn</li>
+                <li>• OpenCV</li>
+                <li>• Ultralytics</li>
+                <li>• vLLM</li>
+                <li>• Streamlit/Gradio</li>
+              </ul>
+            </Card>
+
+            <Card title="データ処理ライブラリ">
+              <ul className="space-y-2 text-slate-700">
+                <li>• Pandas/Polars</li>
+                <li>• NumPy</li>
+                <li>• Matplotlib</li>
+                <li>• Jupyter</li>
+                <li>• wandb</li>
+              </ul>
+            </Card>
           </div>
         </div>
       </div>

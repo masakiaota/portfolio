@@ -1,3 +1,5 @@
+import Card from '@/components/Card';
+
 export default function PublicationsSection() {
   return (
     <section id="publications" className="py-12 sm:py-16 md:py-20 bg-slate-50">
@@ -5,42 +7,43 @@ export default function PublicationsSection() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 leading-tight text-slate-900">私が登場する出版物</h2>
           <div className="space-y-4 sm:space-y-6">
-            <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
-              <div className="flex-grow">
-                <h3 className="text-xl font-semibold mb-3 text-slate-900">謝辞掲載</h3>
-                <p className="text-lg text-slate-700 mb-2">
-                  「PolarsとPandasで学ぶ データ処理アイデアレシピ55」
-                </p>
-                <p className="text-slate-600 mb-3">著者: 冨山 吉孝、早川 裕橹、齋藤 慎一朗</p>
-                <p className="text-slate-700 mb-4">
-                  本書の謝辞に掲載いただきました。データ処理に関する知見の共有や技術的なフィードバックを行いました。
-                </p>
-              </div>
-              <div className="flex flex-wrap gap-4 mt-auto">
-                <a
-                  href="https://bookclub.kodansha.co.jp/product?item=0000398238"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-blue-600 hover:text-blue-700 transition"
-                >
-                  公式サイト
-                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
-                <a
-                  href="https://www.amazon.co.jp/Polars%E3%81%A8pandas%E3%81%A7%E5%AD%A6%E3%81%B6-%E3%83%87%E3%83%BC%E3%82%BF%E5%87%A6%E7%90%86%E3%82%A2%E3%82%A4%E3%83%87%E3%82%A2%E3%83%AC%E3%82%B7%E3%83%9455-KS%E6%83%85%E5%A0%B1%E7%A7%91%E5%AD%A6%E5%B0%82%E9%96%80%E6%9B%B8-%E5%86%A8%E5%B1%B1-%E5%90%89%E5%AD%9D/dp/4065369800"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-blue-600 hover:text-blue-700 transition"
-                >
-                  Amazonで見る
-                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
-              </div>
-            </div>
+            <Card
+              title="謝辞掲載"
+              footer={
+                <div className="flex flex-wrap gap-4">
+                  <a
+                    href="https://bookclub.kodansha.co.jp/product?item=0000398238"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-blue-600 hover:text-blue-700 transition"
+                  >
+                    公式サイト
+                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://www.amazon.co.jp/Polars%E3%81%A8pandas%E3%81%A7%E5%AD%A6%E3%81%B6-%E3%83%87%E3%83%BC%E3%82%BF%E5%87%A6%E7%90%86%E3%82%A2%E3%82%A4%E3%83%87%E3%82%A2%E3%83%AC%E3%82%B7%E3%83%9455-KS%E6%83%85%E5%A0%B1%E7%A7%91%E5%AD%A6%E5%B0%82%E9%96%80%E6%9B%B8-%E5%86%A8%E5%B1%B1-%E5%90%89%E5%AD%9D/dp/4065369800"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-blue-600 hover:text-blue-700 transition"
+                  >
+                    Amazonで見る
+                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </div>
+              }
+            >
+              <p className="text-lg text-slate-700 mb-2">
+                「PolarsとPandasで学ぶ データ処理アイデアレシピ55」
+              </p>
+              <p className="text-slate-600 mb-3">著者: 冨山 吉孝、早川 裕橹、齋藤 慎一朗</p>
+              <p className="text-slate-700 mb-4">
+                本書の謝辞に掲載いただきました。データ処理に関する知見の共有や技術的なフィードバックを行いました。
+              </p>
+            </Card>
             
             <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
               <div className="flex-grow">
