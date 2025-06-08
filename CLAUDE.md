@@ -132,14 +132,29 @@ git push origin main
    - `src/components/sections/`ディレクトリでの管理
    - コンポーネントベースの構造による保守性向上
 
-### 次の予定作業
-1. パフォーマンス最適化（画像最適化、SEO設定）
-   - プロフィール画像のWebP変換と最適化
-   - メタタグ拡張（OGP、Twitter Cards）
-   - 構造化データ（JSON-LD）実装
-   - sitemap.xml・robots.txt生成
-   - Core Web Vitals改善
-2. favicon作成とブランディング強化
+6. ✅ **フェーズ6: favicon作成**
+   - 複数サイズのfavicon生成（16px, 32px, 48px, 192px, 512px）
+   - manifest.json対応
+   - Apple Touch Icon対応
+
+7. ✅ **フェーズ7: プロフィール画像最適化**
+   - WebP形式への変換によるファイルサイズ98%削減
+   - 複数サイズ対応（48px, 96px, 192px, 384px）
+   - パフォーマンス向上
+
+### 次の予定作業（優先度順）
+
+#### 優先度：高（すぐにやるべき）
+1. **基本的なメタタグ拡張** - SEO基盤、OGP対応
+
+#### 優先度：中（できればやりたい）
+2. **英語版対応** - 国際展開を考えるなら重要、i18n実装
+3. **sitemap.xml生成** - SEO向上、Next.jsで自動生成可能
+4. **robots.txt作成** - SEO基盤
+5. **Twitter Cards対応** - ソーシャル共有時の見栄え
+
+#### 優先度：低（時間があれば）
+6. **構造化データ(JSON-LD)実装** - 高度なSEO、時間がかかる
 
 ## 開発者情報
 

@@ -16,8 +16,39 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Masaki Aota | 機械学習エンジニア",
-  description: "Masaki Aota ｜ 機械学習エンジニア・データサイエンティストの紹介",
+  description: "Kaggle Master・AtCoder水色の機械学習エンジニア。生存分析、自然言語処理、画像処理の専門家として年間数千万円規模のコスト削減実績。Python、PyTorch、AWS・GCP認定取得。",
+  keywords: ["機械学習", "データサイエンス", "Python", "Kaggle", "AtCoder", "自然言語処理", "画像処理", "生存分析", "PyTorch", "AWS", "GCP", "機械学習エンジニア", "ポートフォリオ"],
+  authors: [{ name: "Masaki Aota" }],
+  creator: "Masaki Aota",
+  publisher: "Masaki Aota",
+  robots: "index, follow",
   manifest: '/manifest.json',
+  metadataBase: new URL('https://masakiaota.pages.dev'),
+  alternates: {
+    canonical: 'https://masakiaota.pages.dev',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'ja_JP',
+    url: 'https://masakiaota.pages.dev',
+    siteName: 'Masaki Aota Portfolio',
+    title: 'Masaki Aota | 機械学習エンジニア',
+    description: 'Kaggle Master・AtCoder水色の機械学習エンジニア。生存分析、自然言語処理、画像処理の専門家として年間数千万円規模のコスト削減実績。Python、PyTorch、AWS・GCP認定取得。',
+    images: [
+      {
+        url: '/profile-192.webp',
+        width: 192,
+        height: 192,
+        alt: 'Masaki Aota - Machine Learning Engineer',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Masaki Aota | 機械学習エンジニア',
+    description: 'Kaggle Master・AtCoder水色の機械学習エンジニア。年間数千万円規模のコスト削減実績を持つ専門家のポートフォリオ。',
+    images: ['/profile-192.webp'],
+  },
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
