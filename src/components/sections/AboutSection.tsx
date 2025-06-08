@@ -27,12 +27,12 @@ export default function AboutSection() {
 
             <Card title="クラウドプラットフォーム">
               <ul className="space-y-2 text-slate-700">
-                <li>• Google Cloud Platform
+                <li>• Google Cloud
                   <ul className="ml-4 mt-1">
                     <li className="text-sm">- Professional Data Engineer</li>
                   </ul>
                 </li>
-                <li>• AWS
+                <li>• Amazon Web Services
                   <ul className="ml-4 mt-1">
                     <li className="text-sm">- Solutions Architect Associate</li>
                   </ul>
