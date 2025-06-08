@@ -2,6 +2,17 @@ import Card from '@/components/Card';
 import Tag from '@/components/Tag';
 import ProjectCard from '@/components/ProjectCard';
 
+/**
+ * プロジェクト一覧セクション
+ * 
+ * コンポーネント使い分けガイドライン:
+ * - ProjectCard: 基本的なプロジェクト（title, description, tags）
+ * - Card: 複雑な機能が必要なプロジェクト（ツールチップ、リンク等）
+ * 
+ * 現在Cardを直接使用しているプロジェクト:
+ * - 政治資金収支報告書: 学会発表リンクのツールチップ機能
+ * - データ分析コンペティション: 受賞歴詳細のツールチップ機能
+ */
 export default function ProjectsSection() {
   return (
     <section id="projects" className="py-12 sm:py-16 md:py-20 bg-light-gray">
@@ -51,6 +62,7 @@ export default function ProjectsSection() {
               tags={['Cursor', 'GitHub Copilot', 'Claude Code']}
             />
             
+            {/* 特殊機能プロジェクト: ツールチップでリンク表示 */}
             <Card
               title="政治資金収支報告書の情報抽出"
               footer={
@@ -95,6 +107,7 @@ export default function ProjectsSection() {
               tags={['Python', 'Label Studio', 'Google Cloud Vision API']}
             />
             
+            {/* 特殊機能プロジェクト: ツールチップで受賞歴詳細表示 */}
             <Card
               title="データ分析コンペティション"
               footer={
