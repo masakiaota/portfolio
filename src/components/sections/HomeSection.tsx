@@ -13,7 +13,8 @@ export default function HomeSection() {
               Masaki Aota
             </h1>
             <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-gray-700 leading-tight">
-              Machine Learning Engineer & Data Scientist
+              Machine Learning Engineer <br className="sm:hidden" />
+              & Data Scientist
             </h2>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-6 sm:mb-8 leading-relaxed">
               Kaggle Master | AtCoder水色
