@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 export const useScrollAnimation = (threshold = 0.1, triggerOnce = true) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { 
-    threshold, 
+    amount: threshold, 
     once: triggerOnce,
     margin: "-100px 0px"
   });
@@ -30,8 +30,7 @@ export const fadeInVariants = {
     opacity: 1, 
     y: 0,
     transition: { 
-      duration: 0.6, 
-      ease: "easeOut" 
+      duration: 0.6
     }
   }
 };
@@ -45,8 +44,7 @@ export const slideInFromLeftVariants = {
     opacity: 1, 
     x: 0,
     transition: { 
-      duration: 0.6, 
-      ease: "easeOut" 
+      duration: 0.6 
     }
   }
 };
@@ -60,8 +58,7 @@ export const slideInFromRightVariants = {
     opacity: 1, 
     x: 0,
     transition: { 
-      duration: 0.6, 
-      ease: "easeOut" 
+      duration: 0.6 
     }
   }
 };
@@ -86,8 +83,7 @@ export const scaleInVariants = {
     opacity: 1, 
     scale: 1,
     transition: { 
-      duration: 0.6, 
-      ease: "easeOut" 
+      duration: 0.6 
     }
   }
 };
