@@ -207,7 +207,7 @@ export default function ProjectsSection() {
             <motion.div variants={fadeInVariants}>
               <ProjectCard
                 title="競技プログラミング"
-                description="半数以上のIT企業において、アルゴリズム能力についてはカンストと言える実力。AtCoder Algorithm: 水色 (最高: 1356)。Heuristicへ参加するタイミングを伺っている。"
+                description="半数以上のIT企業において、アルゴリズム能力についてはカンストと言える実力。AtCoder Algorithm: 水色 (最高: 1356)、Heuristic: 青色 (現在: 1779)。"
                 tags={['Python', 'Cython', 'NumPy', 'PyPy']}
               />
             </motion.div>

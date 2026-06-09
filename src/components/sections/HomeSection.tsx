@@ -16,8 +16,8 @@ const containerVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     y: 0,
     transition: { duration: 0.6 }
   }
@@ -25,8 +25,8 @@ const itemVariants = {
 
 const imageVariants = {
   hidden: { opacity: 0, scale: 0.8 },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     scale: 1,
     transition: { duration: 0.6 }
   }
@@ -37,35 +37,35 @@ export default function HomeSection() {
     <section id="home" className="py-12 sm:py-16 md:py-20 bg-light-gray">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
-          <motion.div 
+          <motion.div
             className="text-center"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
           >
-            <motion.h1 
+            <motion.h1
               variants={itemVariants}
               className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-slate-900 leading-tight"
             >
               Masaki Aota
             </motion.h1>
-            
-            <motion.h2 
+
+            <motion.h2
               variants={itemVariants}
               className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-gray-700 leading-tight"
             >
               Machine Learning Engineer <br className="sm:hidden" />
               & Data Scientist
             </motion.h2>
-            
-            <motion.p 
+
+            <motion.p
               variants={itemVariants}
               className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-6 sm:mb-8 leading-relaxed"
             >
-              Kaggle Master | AtCoder水色
+              Kaggle Master | AtCoder Heuristic青色・Algorithm水色
             </motion.p>
-            
-            <motion.div 
+
+            <motion.div
               variants={imageVariants}
               className="mb-6 sm:mb-8"
             >
@@ -86,8 +86,8 @@ export default function HomeSection() {
                 </picture>
               </div>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               variants={itemVariants}
               className="flex justify-center"
             >
